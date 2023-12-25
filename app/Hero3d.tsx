@@ -29,13 +29,13 @@ export default function Hero3d() {
         let mouseX = board.clientWidth / 2;
         let mouseY = board.clientHeight / 2;
 
-        const controls = new OrbitControls(camera, renderer.domElement);
-        // Controls Constraints
-        controls.minDistance = 1.8; // Minimum zoom distance
-        controls.maxDistance = 2.5; // Maximum zoom distance
+        // const controls = new OrbitControls(camera, renderer.domElement);
+        // // Controls Constraints
+        // controls.minDistance = 1.8; // Minimum zoom distance
+        // controls.maxDistance = 2.5; // Maximum zoom distance
 
-        controls.minPolarAngle = Math.PI / 4; // Minimum polar angle (in radians) - vertical angle
-        controls.maxPolarAngle = (3 * Math.PI) / 6; // Maximum polar angle (in radians) - vertical angle
+        // controls.minPolarAngle = Math.PI / 4; // Minimum polar angle (in radians) - vertical angle
+        // controls.maxPolarAngle = (3 * Math.PI) / 6; // Maximum polar angle (in radians) - vertical angle
 
         // add lights
         const topLight1 = new THREE.PointLight(0x01BAEF, 20);
@@ -117,7 +117,7 @@ export default function Hero3d() {
                 loadedModel.position.y = mouseY / 15000 + 0.2;
             }
 
-            controls.update();
+            // controls.update();
 
             // renderer.render(scene, camera);
             composer.render();
