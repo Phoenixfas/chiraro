@@ -3,7 +3,7 @@ import { HiOutlineDevicePhoneMobile, HiOutlinePaintBrush } from "react-icons/hi2
 
 export default function ServicesCards() {
   return (
-    <div className="relative flex flex-col w-full min-h-screen items-center py-14 gap-[100px]">
+    <div className="relative flex flex-col w-full mb-[150px] items-center py-14 gap-[100px]">
         {/* <h1 className="text-[3em]">Our Services</h1> */}
         <div className="w-full flex flex-wrap justify-center items-center gap-[30px]">
 
