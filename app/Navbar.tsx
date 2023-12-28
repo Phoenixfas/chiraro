@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <>
-        <div className="w-full flex flex-col items-center relative z-[999999999]">
+        <div className={`w-full ${menuOpen ? "hidden" : "flex"} flex-col items-center relative z-[999999999]`}>
             <div className={`w-[95%] duration-300 fixed ${scrollingUp ? 'top-5' : 'top-0'} bg-[rgba(255,255,255,.05)] backdrop-blur-md flex items-center justify-between sm:px-8 px-3 py-3 border-[2px] border-[#192655] rounded-2xl`}>
                 <Link href={"/"} className='flex items-center text-[25px] tracking-[.4rem]'>
                     <p className='hidden sm:block'>CH</p>
@@ -55,8 +55,8 @@ export default function Navbar() {
                 </div>
             </div>
         </div>
-        <div className={`fixed top-5 right-0 z-[9999999999] w-3/4 flex flex-col gap-5 pb-10 rounded-l-2xl bg-[#192655] duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-[100%]'}`}>
-            <div className="w-full flex justify-end items-center px-3 h-[72px] border-b border-white">
+        <div className={`fixed top-5 right-0 z-[9999999999] w-3/4 flex flex-col gap-5 pb-10 rounded-l-2xl bg-[rgba(255,255,255,.05)] backdrop-blur-md border-[2px] border-r-0 border-[#192655] duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-[100%]'}`}>
+            <div className="w-full flex justify-end items-center px-3 h-[72px] border-b-2 border-[#192655]">
                 <TfiClose className='text-white text-3xl' onClick={() => setMenuOpen(false)}/>
             </div>
             <div className="w-full flex flex-col justify-center items-center px-10 mb-5">
