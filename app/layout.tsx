@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Quicksand } from 'next/font/google'
 import '../styles/globals.css'
 import Preloader from './Preloader'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const quicksand = Quicksand({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={quicksand.className}>
         <Preloader>
           {children}
+          <SpeedInsights />
         </Preloader>
       </body>
     </html>
