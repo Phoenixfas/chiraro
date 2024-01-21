@@ -1,3 +1,4 @@
+import BlogsCards from "./BlogsCards";
 import Features from "./Features";
 import Hero from "./Hero";
 import SEO from "./SEO";
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <ServicesCards />
       <SEO />
+      <BlogsCards />
     </main>
   )
 }

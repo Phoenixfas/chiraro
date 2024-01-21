@@ -24,7 +24,7 @@ export default function SEO() {
       }, [isInView, controls]);
 
   return (
-    <div ref={ref} className="w-full overflow-hidden flex flex-col md:flex-row gap-3 md:gap-10 px-5 xl:px-40 lg:px-20 md:px-10 pb-5">
+    <div ref={ref} className="w-full xl:mt-5 overflow-hidden flex flex-col md:flex-row gap-3 md:gap-10 px-5 xl:px-40 lg:px-20 md:px-10 pb-5">
         <motion.div variants={variant1} animate={controls}  className="flex-1 md:flex-[.8] flex justify-center md:justify-end">
             <Image className="w-2/3 md:w-[450px] h-[200px] md:h-[350px] object-contain " src="/images/seo.svg" alt="search engine optimization" width={500} height={500} />
         </motion.div>
