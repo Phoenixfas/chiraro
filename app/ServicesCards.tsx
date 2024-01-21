@@ -4,7 +4,7 @@ import services from "../data/services";
 export default function ServicesCards() {
   return (
     <div className="relative flex flex-col w-full mb-20  items-center py-14 gap-[50px]">
-        <h1 className="w-fit mb-10 text-[2.5rem] sm:text-[3em] relative before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1/2 before:h-[3px] before:rounded-full before:bg-[#01BAEF]">Our Services</h1>
+        <h1 className="w-fit mb-10 text-[2.5rem] text-center sm:text-[3em] relative before:content-[''] before:absolute before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:w-1/2 before:h-[3px] before:rounded-full before:bg-[#01BAEF]">Our Services</h1>
         <div className="w-full sm:px-20 flex flex-wrap justify-center items-center gap-x-[70px] gap-y-[100px]">
 
             {services && services.slice(0, 3).map((service, index) => (

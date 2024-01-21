@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function BlogsCards() {
   return (
     <div className='w-full flex flex-col items-center my-[100px] px-5'>
-        <h2 className='text-lg text-center font-medium '>Our Blog</h2>
+        <h2 className='text-lg text-center font-medium text-[#01BAEF]'>Our Blog</h2>
         <h1 className='text-[3.2rem] text-center font-bold mb-9'>Recently On Our Blog</h1>
 
         <div className="w-full max-w-[1200px] flex flex-wrap justify-center gap-7">
