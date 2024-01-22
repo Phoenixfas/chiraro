@@ -16,6 +16,12 @@ const clients = [
         name: "Meti Legal Services",
         image: "/images/clients/meti.png",
         link: "https://mettita.com/"
+    },
+    {
+        id: 4,
+        name: "Mintec Ethiopia",
+        image: "/images/clients/mintec.png",
+        link: "https://www.mintechethiopia.com/"
     }
 ]
 
