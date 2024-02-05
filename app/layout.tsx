@@ -3,6 +3,7 @@ import { Quicksand } from 'next/font/google'
 import '../styles/globals.css'
 import Preloader from './Preloader'
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import HandleProvider from './HandleProvider';
 
 const quicksand = Quicksand({ subsets: ['latin'] })
 
@@ -20,8 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={quicksand.className}>
         <Preloader>
-          {children}
-          <SpeedInsights />
+          <HandleProvider>
+            {children}
+            <SpeedInsights />
+          </HandleProvider>
         </Preloader>
       </body>
     </html>

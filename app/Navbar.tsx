@@ -45,7 +45,7 @@ export default function Navbar() {
 
                 <div className="hidden items-center gap-14 text-base md:flex">
                     <Link href={"/services"} className='hover:text-[#01BAEF] duration-300'>Services</Link>
-                    <Link href={"/"} className='hover:text-[#01BAEF] duration-300'>Pricing</Link>
+                    <Link href={"/pricing"} className='hover:text-[#01BAEF] duration-300'>Pricing</Link>
                     <Link href={"/"} className='hover:text-[#01BAEF] duration-300'>About</Link>
                     <Link href={"/"} className='hover:text-[#01BAEF] duration-300'>Contact</Link>
                 </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
             <div className="w-full flex flex-col justify-center items-center px-10 mb-5">
                 <Link href={"/"} className='hover:bg-[#01BAEF] rounded-lg duration-300 py-3 hover:border-b-[1px] border-white w-full text-center'>Home</Link>
                 <Link href={"/"} className='hover:bg-[#01BAEF] rounded-lg duration-300 py-3 hover:border-b-[1px] border-white w-full text-center'>Services</Link>
-                <Link href={"/"} className='hover:bg-[#01BAEF] rounded-lg duration-300 py-3 hover:border-b-[1px] border-white w-full text-center'>Pricing</Link>
+                <Link href={"/pricing"} className='hover:bg-[#01BAEF] rounded-lg duration-300 py-3 hover:border-b-[1px] border-white w-full text-center'>Pricing</Link>
                 <Link href={"/"} className='hover:bg-[#01BAEF] rounded-lg duration-300 py-3 hover:border-b-[1px] border-white w-full text-center'>About</Link>
                 <Link href={"/"} className='hover:bg-[#01BAEF] rounded-lg duration-300 py-3 hover:border-b-[1px] border-white w-full text-center'>Contact</Link>
             </div>
